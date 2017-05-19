@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hanu clicks">
+    <meta name="author" content="Sai Hanuman Prasad">
+    <title>Index</title>
+    <script src="js/jquery.js"></script>
+    <script src="vendors/materialdesign/material.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"> </script>
+    <script src="js/angular-route.js"> </script>
+    <script type="text/javascript" src="js/ui-bootstrap-tpls.min.js"></script>
+    <script src="js/app.js"> </script>
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/CarouselDemoCtrl.js"></script>
+    <script src="controllers/imagesTwo.js"> </script>
+    <script src="controllers/contactController.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/layout.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <style>
+
+        span:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body ng-app ="app1">
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div  ng-controller="homeController" class="container-fluid" style="background-color: #03A9F4;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+
+            <a class="navbar-brand page-scroll" href="#!home" style="color: #fff">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <span class="light" > Hanu Clicks </span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+
+                    <a href="https://hanu73.github.io" target="_blank" class="md-raised md-button btnStyle" type="button"> Portfolio </a>
+                </li>
+                <li>
+                    <md-button class="md-raised  md-button btnStyle" type="button" ng-click="albums()" > Albums </md-button>
+                </li>
+                <li>
+                    <md-button class="md-raised md-button btnStyle" type="button"> Vlogs </md-button>
+
+                </li>
+                <li>
+                    <md-button class="md-raised md-button btnStyle" ng-click="contact()" >Contact</md-button>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+<div ng-view> </div>
+<div class="col-md-12 col-sm-12 col-xs-12" style="background-color: #03A9F4;/*min-height: 39px;padding-top: 1%;*/" >
+    <div class="col-md-4 col-sm-4 hidden-xs">
+        <h4> <i class="fa fa-phone-square" aria-hidden="true"></i> 8121908407</h4>
+    </div>
+    <div class="col-xs-6 col-xs-offset-3 hidden-lg hidden-sm hidden-md">
+        <h4> <i class="fa fa-phone-square" aria-hidden="true"></i> 8121908407</h4>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+    <h4 align="center">Hanu Clicks &copy; 2017 </h4> </div>
+    <div class="col-md-3 col-sm-3 col-xs-12 pull-right" style="text-align: right;margin-top: 0.8%;">
+        <div class="col-md-7 col-md-offset-6 col-sm-7 col-sm-offset-6 col-xs-12">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="mailto:saihanuman73@gmail.com" class="customHover"> <i class="fa fa-envelope" aria-hidden="true"> </i> </a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <a href="https://www.facebook.com/profile.php?id=100004930683412" target="_blank" class="customHover"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="https://www.linkedin.com/in/sai-hanuman-8a0b62104/" target="_blank" class="customHover">  <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <a href="http://instagram.com/hanu73" target="_blank" class="customHover"> <i class="fa fa-instagram" aria-hidden="true"></i> </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+/*    $('.btnStyle').click(function(){
+        $(".navbar-main-collapse").removeClass("in");
+        $('navbar-nav').css({
+            transition: "0.5s"
+        })//.addClass("collapse");
+    });*/
+</script>
+</body>
+</html>
