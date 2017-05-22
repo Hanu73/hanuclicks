@@ -119,6 +119,12 @@
     ga('send', 'pageview');
 
 </script>
+    
+    <script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+    window.onload = function () { NProgress.done(); }
+</script>
 <script>
 /*    $('.btnStyle').click(function(){
         $(".navbar-main-collapse").removeClass("in");
