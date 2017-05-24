@@ -1,0 +1,349 @@
+.intro
+{
+    height:auto;
+    padding:100px 0;
+    text-align:center;
+    color:#fff;
+    background:url(../images/hh.jpg) bottom center no-repeat #000;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    -o-background-size:cover
+}
+.myImage{
+  border-radius: 50%;
+}
+.filter:hover{
+    filter:grayscale(100%);
+}
+
+.filter1{
+    filter:grayscale(100%);
+    cursor: pointer;
+}
+
+.filter1:hover{
+    filter:grayscale(0%);
+    
+}
+
+
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 100;
+    border: 3px solid rgba(255, 255, 255, 0.82);
+}
+
+
+.navbar-custom .nav li.active a {
+    background-color: rgb(179, 179, 179);
+}
+h1{
+    font-size: 100px;
+}
+body
+{
+    font-family:Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#fff;
+    webkit-tap-highlight-color:rgba(255,255,255,.2)
+}
+.btn,.navbar-custom,h1,h2,h3,h4,h5,h6{
+    text-transform:uppercase;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+/*
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background 1.3s ease-in-out;
+}*/
+
+.btnStyle{
+    padding: 0 6px !important;
+    line-height: 36px !important;
+}
+.btnStyle:hover,.btnStyle:focus{
+    text-decoration: none !important;
+    color:#fff !important;
+    background-color: #03A9F4 !important;
+}
+
+
+.sendBtn{
+    padding: 0 6px !important;
+    line-height: 36px !important;
+    background-color: #03A9F4 !important;
+    box-shadow: none !important;
+}
+.sendBtn:hover{
+    padding: 0 6px !important;
+    line-height: 36px !important;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.26) !important; ;
+
+}
+
+.seperation{
+    padding-bottom: 3%;
+    border-right: 1px solid white
+}
+/*h1,h2,h3,h4,h5,h6
+{margin:0 0 35px;
+    font-weight:700;
+    letter-spacing:1px
+}*/
+p
+{
+    margin:0 0 25px;
+    font-size:18px;
+    line-height:1.5
+}
+a{
+    color:white;
+}
+
+/*
+.frame {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.zoomin img {
+    height: 90%;
+    width: 90%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.zoomin img:hover {
+    width: 100%;
+    height: 100%;
+}
+
+*/
+
+img {
+   /* -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);*/
+
+    -webkit-transition: -webkit-transform .15s linear;
+    -moz-transition: -moz-transform .15s linear;
+    -o-transition: -o-transform .15s linear;
+    transition: transform .15s linear;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+/*img:hover {
+    -webkit-transform: scale(1.25) !important;
+    -moz-transform: scale(1.25) !important;
+    -o-transform: scale(1.25) !important;
+    transform: scale(1.25) !important;
+    z-index:5
+}*/
+
+.customHover{
+    opacity:0.5;
+}
+
+.customHover:hover,.customHover:focus{
+    opacity: 1;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.customHyper:hover{
+    text-decoration: none;
+}
+
+.topSpace{
+    margin-top: 2%;
+}
+
+.topPadding{
+    padding-top: 2%;
+}
+.line{
+    width:132px;
+}
+
+.facebook:hover,.instagram:hover,.linkedin:hover,.github:hover{
+  /*  border: 2px solid #F44336 !important;*/
+    box-shadow: 2px 2px 13px black;
+}
+
+.facebook:focus,.instagram:focus,.linkedin:focus,.github:focus{
+   /* border: 2px solid #000 !important;*/
+    box-shadow: 2px 2px 13px black;
+}
+
+.border:hover .fb,.border:hover .li,.border:hover .insta,.border:hover .git{
+    color:#000;
+
+}
+.border:focus .fb,.border:focus .li,.border:focus .insta,.border:focus .git{
+    color:#000
+}
+.circle
+{
+    width:50px;
+    height:50px;
+    border-radius:250px;
+    font-size:50px;
+    color:#fff;
+    text-align:center;
+    background:#000
+}
+
+
+.circle:hover .hi{
+
+    color:blue
+}
+
+.pjax-loader-bar{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s linear 0.4s;
+    transition: opacity 0.4s linear 0.4s;
+}
+ .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: red;
+    box-shadow: 0 0 10px rgba(119,182,255,0.7);
+    -webkit-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+}
+
+ .facebook,.linkedin,.instagram,.github {
+     border-radius: 100px;
+     font-size: 23px;
+     background: #fff;
+     width: 50px;
+     color: rgb(0, 147, 221);
+     height: 50px;
+     line-height: 48px;
+ }
+
+/* M E D I A  Q U E R I E S*/
+
+
+
+/*@media only screen and (max-width: 460px) and (min-width: 200px) {
+
+    h1 {
+        font-size: 2em;
+    }
+}*/
+
+@media only screen and (min-width:721px) and (max-width:1020px){
+    .brand-heading{
+        font-size: 10vw;
+    }
+    .logo1{
+        margin-top: 5% !important;
+    }
+}
+@media only screen and (min-width:480px) and (max-width: 720px)
+
+{
+    .navbar-custom
+    {
+        padding:0px 0;
+        border-bottom:none;
+        letter-spacing:1px;
+        background:0 0;
+
+    }
+
+    .navbar-custom.top-nav-collapse
+    {
+        padding:0;background:#000;
+        border-bottom:1px solid rgba(255,255,255,.3)
+    }
+    .navbar-custom .navbar-toggle
+    {
+        color:#fff;
+        background-color:rgba(255,255,255,.2);
+        font-size:12px
+    }
+
+    .navbar-custom .navbar-toggle:active,.navbar-custom .navbar-toggle:focus
+    {
+        outline:0
+    }
+
+
+.intro
+{
+    display:table;
+    height:auto;
+    padding:100px 0;
+    text-align:center;
+    color:black;
+    background:url(../images/hh.jpg)  no-repeat #000;
+    background-size: cover;
+}
+.intro .intro-body
+{
+    display:table-cell;
+    vertical-align:middle
+}
+
+
+    .logo{
+        width: 160px;
+
+    }
+/*.intro .intro-body .md-display-3
+{
+    font-size:1em
+}*/
+}
+
+@media only screen and (min-width:360px) and (max-width: 479px)
+{
+    .logo{
+        width: 160px;
+
+    }
+
+    .brand-heading
+    {
+        font-size:10vw;
+    }
+    .btnStyle{
+        display: block !important;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:105px) and (max-width: 359px)
+{
+
+    .brand-heading
+    {
+        font-size:10vw;
+    }
+
+    .logo{
+        width: 100px;
+    }
+}
