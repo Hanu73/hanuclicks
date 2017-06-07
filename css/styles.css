@@ -11,7 +11,7 @@
     -o-background-size:cover
 }
 .myImage{
-  border-radius: 50%;
+    border-radius: 50%;
 }
 .filter:hover{
     filter:grayscale(100%);
@@ -24,9 +24,8 @@
 
 .filter1:hover{
     filter:grayscale(0%);
-    
-}
 
+}
 
 
 .image-cropper {
@@ -131,10 +130,10 @@ a{
 */
 
 img {
-   /* -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    transform: rotate(10deg);*/
+    /* -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     transform: rotate(10deg);*/
 
     -webkit-transition: -webkit-transform .15s linear;
     -moz-transition: -moz-transform .15s linear;
@@ -178,12 +177,12 @@ img {
 }
 
 .facebook:hover,.instagram:hover,.linkedin:hover,.github:hover{
-  /*  border: 2px solid #F44336 !important;*/
+    /*  border: 2px solid #F44336 !important;*/
     box-shadow: 2px 2px 13px black;
 }
 
 .facebook:focus,.instagram:focus,.linkedin:focus,.github:focus{
-   /* border: 2px solid #000 !important;*/
+    /* border: 2px solid #000 !important;*/
     box-shadow: 2px 2px 13px black;
 }
 
@@ -221,7 +220,7 @@ img {
     -webkit-transition: opacity 0.4s linear 0.4s;
     transition: opacity 0.4s linear 0.4s;
 }
- .progress {
+.progress {
     position: fixed;
     top: 0;
     left: 0;
@@ -232,15 +231,15 @@ img {
     transition: width 0.4s ease;
 }
 
- .facebook,.linkedin,.instagram,.github {
-     border-radius: 100px;
-     font-size: 23px;
-     background: #fff;
-     width: 50px;
-     color: rgb(0, 147, 221);
-     height: 50px;
-     line-height: 48px;
- }
+.facebook,.linkedin,.instagram,.github {
+    border-radius: 100px;
+    font-size: 23px;
+    background: #fff;
+    width: 50px;
+    color: rgb(0, 147, 221);
+    height: 50px;
+    line-height: 48px;
+}
 
 /* M E D I A  Q U E R I E S*/
 
@@ -251,6 +250,11 @@ img {
     h1 {
         font-size: 2em;
     }
+    
+    .menuBtns{
+        float :none !important
+    }
+
 }*/
 
 @media only screen and (min-width:721px) and (max-width:1020px){
@@ -264,6 +268,12 @@ img {
 @media only screen and (min-width:480px) and (max-width: 720px)
 
 {
+
+
+    .menuBtns{
+        float :none !important
+    }
+
     .navbar-custom
     {
         padding:0px 0;
@@ -291,35 +301,40 @@ img {
     }
 
 
-.intro
-{
-    display:table;
-    height:auto;
-    padding:100px 0;
-    text-align:center;
-    color:black;
-    background:url(../images/hh.jpg)  no-repeat #000;
-    background-size: cover;
-}
-.intro .intro-body
-{
-    display:table-cell;
-    vertical-align:middle
-}
+    .intro
+    {
+        display:table;
+        height:auto;
+        padding:100px 0;
+        text-align:center;
+        color:black;
+        background:url(../images/hh.jpg)  no-repeat #000;
+        background-size: cover;
+    }
+    .intro .intro-body
+    {
+        display:table-cell;
+        vertical-align:middle
+    }
 
 
     .logo{
         width: 160px;
 
     }
-/*.intro .intro-body .md-display-3
-{
-    font-size:1em
-}*/
+    /*.intro .intro-body .md-display-3
+    {
+        font-size:1em
+    }*/
 }
 
 @media only screen and (min-width:360px) and (max-width: 479px)
 {
+
+
+    .menuBtns{
+        float :none !important
+    }
     .logo{
         width: 160px;
 
@@ -337,6 +352,10 @@ img {
 
 @media only screen and (min-width:105px) and (max-width: 359px)
 {
+
+    .menuBtns{
+        float :none !important
+    }
 
     .brand-heading
     {
