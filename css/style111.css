@@ -1,0 +1,326 @@
+/*
+* clip-path masks
+*/
+
+/* core */
+
+.cpm{
+  display: inline-block;
+  padding: var(--cpmStrokeThickness, 3px);
+  -webkit-clip-path: var(--cpmMask);
+          clip-path: var(--cpmMask);
+  background-color: var(--cpmStrokeColor, #fff);
+}
+
+.cpm__img{
+  display: block;
+  -webkit-clip-path: var(--cpmMask);
+          clip-path: var(--cpmMask);
+}
+
+/* masks */
+
+.cpm_type1{
+  --cpmMask: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%);
+}
+
+.cpm_type2{
+  --cpmMask: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.cpm_type3{
+  --cpmMask: polygon(0 10%, 10% 10%, 10% 0, 90% 0, 90% 10%, 100% 10%, 100% 90%, 90% 90%, 90% 100%, 10% 100%, 10% 90%, 0 90%);
+}
+
+.cpm_type4{
+  --cpmMask: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+  --cpmStrokeThickness: 5px;
+}
+
+/* animations for masks */
+
+.cpm{
+  -webkit-transition: -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out), -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+}
+
+.cpm__img{
+  -webkit-transition: -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+  transition: clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out), -webkit-clip-path var(--cpmAnimationDuration, .2s) var(--cpmAnimationTimingFunction, ease-out);
+}
+
+/* effect 1*/
+
+.cpm_type1-a1{
+  --cpmAnimationDuration: .4s;
+}
+
+.cpm_type1:hover, .cpm_type1:focus{
+  --cpmMask: polygon(0 0, 100% 0, 100% 10%, 100% 100%, 90% 100%, 0% 100%, 0% 90%, 0% 10%);
+}
+
+/* effect 2*/
+
+.cpm_type2-a1{
+  --cpmAnimationDuration: .4s;
+}
+
+.cpm_type2:hover, .cpm_type2:focus{
+  --cpmMask: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+/* effect 3*/
+
+.cpm_type3-a1{
+  --cpmAnimationDuration: .3s;
+}
+
+.cpm_type3:hover, .cpm_type3:focus{
+  --cpmMask: polygon(90% 0, 100% 0, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0 90%, 0 10%, 0 0, 10% 0);
+}
+
+/* effect 4*/
+
+.cpm_type4-a1{
+  --cpmStrokeThickness: 5px;
+}
+
+.cpm_type4:hover, .cpm_type4:focus{
+  --cpmMask: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* effect 5*/
+
+.cpm_type1-a2{
+  --cpmAnimationDuration: .5s;
+}
+
+.cpm_type1-a2:hover, .cpm_type1-a2:focus{
+  --cpmMask: polygon(0 0, 90% 0, 100% 0, 100% 90%, 100% 100%, 10% 100%, 0 100%, 0 10%); 
+}
+
+/* effect 6*/
+
+.cpm_type2-a2{
+  --cpmAnimationDuration: .9s;
+  --cpmAnimationTimingFunction: cubic-bezier(1, 0.18, 0, 1.14);
+}
+
+/*
+* demo
+*/
+
+@media screen and (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+
+  background-color: #c68aad;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;   
+}
+
+a{
+  text-decoration: none;
+  color: inherit
+}
+
+a:hover, a:focus{
+  text-decoration: underline;
+}
+
+.page{
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.demo{
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.main-container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer{
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.tile__img{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1025px){
+
+  .section{
+    width: 49%;
+  }
+
+  .section:nth-child(odd){
+    margin-right: 1%;
+  }
+
+  .section:nth-child(even){
+    margin-left: 0;
+  }
+
+  .demo__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px){
+
+  .section{
+    height: 100vh;
+    position: relative;
+  }
+
+  .section__content{
+    width: 66vh;
+    height: 66vh;  
+    max-width: 650px;
+    max-height: 650px;    
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);  
+  }
+
+  .tile{
+    width: 150px;
+    height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+  .tile:hover{
+    z-index: 2;
+  }
+
+  .section__item:nth-child(1){
+    top: 0;
+    left: 0;
+  }
+
+  .section__item:nth-child(2){
+    top: 0;
+    right: 0;
+  }
+
+  .section__item:nth-child(3){
+    bottom: 0;
+    right: 0;
+  }
+
+  .section__item:nth-child(4){
+    bottom: 0;
+    left: 0;
+  }
+
+  .demo4__item:nth-child(1){
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .demo4__item:nth-child(2){
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  .demo4__item:nth-child(3){
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .demo4__item:nth-child(4){
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  .demo__container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .section{
+    margin: 35px 4%;
+  }
+  
+  .tile:not(:nth-child(1)){
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+  
+  .tile{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  
+  .tile{
+    width: 100px;
+    height: 100px;
+  }  
+}
