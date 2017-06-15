@@ -1,13 +1,11 @@
-    {
-  "dataModel" :             {  y: 40, label: "Cafeteria"},
-                            {  y: 10, label: "Lounge" },
-                            {  y: 72, label: "Games Room" },
-                            {  y: 30, label: "Lecture Hall" },
-                            {  y: 21, label: "Library"},
-                            {  y: 20, label: "Cafeteria"},
-                            {  y: 14, label: "Lounge" },
-                            {  y: 40, label: "Games Room" },
-                            {  y: 43, label: "Lecture Hall" },
-                            {  y: 17, label: "Library"}
-                                
-                                }
+{
+  "dataModel" :
+  [ {"x":876333, "y": 23, "label": "Swimming" } ,
+  {  "x":33443,"y": 55, "label": "Cricket" },
+  { "x":653123,"y": 15, "label": "Cooking"},
+  {  "x":5466,"y": 12, "label": "Shuttle" },
+  { "x":674,"y": 39, "label": "Swimming"},
+  {  "x":89,"y": 9, "label": "Cricket" },
+  { "x":5673,"y": 70, "label": "Cooking"},
+  { "x":5673,"y": 65, "label": "Shuttle"}]
+}
