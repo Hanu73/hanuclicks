@@ -1,0 +1,13 @@
+    {
+  "dataModel" :             {  y: 40, label: "Cafeteria"},
+                            {  y: 10, label: "Lounge" },
+                            {  y: 72, label: "Games Room" },
+                            {  y: 30, label: "Lecture Hall" },
+                            {  y: 21, label: "Library"},
+                            {  y: 20, label: "Cafeteria"},
+                            {  y: 14, label: "Lounge" },
+                            {  y: 40, label: "Games Room" },
+                            {  y: 43, label: "Lecture Hall" },
+                            {  y: 17, label: "Library"}
+                                
+                                }
