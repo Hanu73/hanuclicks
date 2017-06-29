@@ -7,5 +7,9 @@
   { "x":674,"y": 5632476, "label": "UdsadSA"},
   {  "x":89,"y": 33243242, "label": "USsadsadA" },
   { "x":5673,"y": 6603403, "label": "UdsadSA"}]
+  
+  "dataa":[{"success":80, "fail":20},
+{"success":20, "fail":35},
+{"success":50, "fail":10}]
 }
 
