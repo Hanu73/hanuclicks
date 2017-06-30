@@ -1,21 +1,8 @@
 {
-   "key": "Series1",
-   "color": "#004433",
-   "values": [
-      {
-         "label": "Group A",
-         "value": 3
-      },
-      {
-         "label": "Group B",
-         "value": 7
-      },
-      {
-         "label": "Group C",
-         "value": 5
-      }
-   ]
+ "dataa":
+  [{"success":80, "fail":20},
+{"success":20, "fail":35},
+{"success":50, "fail":10},
+  {"success":10.8, "fail":40},
+  {"success":28, "fail":17}]
 }
-
-
-
