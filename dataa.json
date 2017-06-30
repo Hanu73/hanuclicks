@@ -1,5 +1,5 @@
 {
-        'key': 'Series1',
+        "key": 'Series1',
         'color': '#004433',
         'values': [
           { 'label' : 'Group A' , 'value' : 3 } ,
