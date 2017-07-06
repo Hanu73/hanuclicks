@@ -1,4 +1,4 @@
-[{
+data = [{
 "email" : "sai@soulstice.biz",
 "firstName" : "sai",
 "lastName" : "hanuman",
@@ -12,6 +12,6 @@
 "lastName" : "tej",
 "mobile" : "89898889",
 "password" : "123456",
-"userName": "cherry73"
+"userName" : "cherry73"
 }]
 
