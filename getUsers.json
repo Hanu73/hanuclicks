@@ -3,16 +3,16 @@
 "email" : "sai@soulstice.biz",
 "firstName" : "sai",
 "lastName" : "hanuman",
-"mobile" : "89898889",
-"password" : "1234",
+"mobile" : 89898889,
+"password" : 1234,
 "userName": "hanu73"
 },
 {
 "email" : "cherry@soulstice.biz",
 "firstName" : "charan",
 "lastName" : "tej",
-"mobile" : "89898889",
-"password" : "123456",
+"mobile" : 89898889,
+"password" : 123456,
 "userName" : "cherry73"
 }]
 }
