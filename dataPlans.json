@@ -1,0 +1,10 @@
+{ "Plans" : [
+  {"MRP" : "R99", "Validity" : "14 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "False", "Free SMS" : "True","Sms Limit" : "30 SMS Per Day", "Free Audio & Video Streaming": "False"},
+  {"MRP" : "R189", "Validity" : "28 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "60 SMS Per Day", "Free Audio & Video Streaming": "False"},
+  {"MRP" : "R279", "Validity" : "36 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "90 SMS Per Day", "Free Audio & Video Streaming": "True"},
+  {"MRP" : "R369", "Validity" : "56 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "120 SMS Per Day", "Free Audio & Video Streaming": "True"},
+  {"MRP" : "R459", "Validity" : "72 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "150 SMS Per Day", "Free Audio & Video Streaming": "True"},
+  {"MRP" : "R549", "Validity" : "94 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "180 SMS Per Day", "Free Audio & Video Streaming": "True"},
+  {"MRP" : "R699", "Validity" : "102 Days" ,"Free WhatsApp Usage" : "True", "Free Calls to other networks" : "True", "Free WiFi" :  "True", "Free SMS" : "True","Sms Limit" : "Unlimited", "Free Audio & Video Streaming": "True"}
+  ]
+  }
